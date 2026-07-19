@@ -323,7 +323,7 @@ const writing = [
                         View GitHub
                       </a>
                       <a 
-                        href="https://linkedin.com/in/smart-nwaiche" 
+                        href="https://www.linkedin.com/in/smart-nwaiche-6405182a5" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="px-6 py-2.5 rounded-xl font-medium text-sm text-[#A1A1AA] hover:text-white border border-white/[0.1] hover:bg-white/[0.04] transition-all flex items-center gap-2"
@@ -587,7 +587,7 @@ const writing = [
               <span>Github</span>
             </a>
             <a 
-              href="https://linkedin.com/in/smart-nwaiche" 
+              href="https://www.linkedin.com/in/smart-nwaiche-6405182a5" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-[#A78BFA] transition-colors flex items-center gap-1.5"
@@ -636,7 +636,7 @@ const writing = [
               
               <button 
                 onClick={() => setIsContactOpen(false)}
-                className="absolute top-6 right-6 p-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-400 hover:text-white transition-colors"
+                className="absolute top-4 right-4 md:top-6 md:right-6 w-8 h-8 md:w-10 md:h-10 p-0 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-400 hover:text-white transition-colors z-20 cursor-pointer"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -747,24 +747,26 @@ const writing = [
               
               <button 
                 onClick={() => setSelectedArticle(null)}
-                className="absolute top-6 right-6 p-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-400 hover:text-white transition-colors"
+                className="absolute top-4 right-4 md:top-6 md:right-6 w-8 h-8 md:w-10 md:h-10 p-0 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-400 hover:text-white transition-colors z-20 cursor-pointer"
               >
                 <X className="w-4 h-4" />
               </button>
 
-              <div className="flex justify-between items-center mb-4 text-xs font-mono text-zinc-500 mt-2">
-                <span>{writing[selectedArticle].date}</span>
-                <span className="text-[#A78BFA]">{writing[selectedArticle].readTime}</span>
+              <div className="pt-12 md:pt-8">
+                <div className="flex justify-between items-center mb-4 text-xs font-mono text-zinc-500 mt-2">
+                  <span>{writing[selectedArticle].date}</span>
+                  <span className="text-[#A78BFA]">{writing[selectedArticle].readTime}</span>
+                </div>
+
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
+                  {writing[selectedArticle].title}
+                </h3>
+
+                <div 
+                  className="prose prose-invert max-w-none text-zinc-300 space-y-4"
+                  dangerouslySetInnerHTML={{ __html: writing[selectedArticle].content || "" }}
+                />
               </div>
-
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
-                {writing[selectedArticle].title}
-              </h3>
-
-              <div 
-                className="prose prose-invert max-w-none text-zinc-300 space-y-4"
-                dangerouslySetInnerHTML={{ __html: writing[selectedArticle].content || "" }}
-              />
             </motion.div>
           </div>
         )}

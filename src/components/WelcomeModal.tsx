@@ -57,37 +57,39 @@ export default function WelcomeModal() {
             {/* Exit/Close Button (Top-Right) */}
             <button
               onClick={handleClose}
-              className="absolute top-6 right-6 p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-400 hover:text-white transition duration-200 cursor-pointer"
+              className="absolute top-4 right-4 md:top-6 md:right-6 w-8 h-8 md:w-10 md:h-10 p-0 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-400 hover:text-white transition duration-200 cursor-pointer z-20"
               aria-label="Close welcome modal"
             >
               <X className="w-4 h-4" />
             </button>
 
-            {/* Premium Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.02] border border-white/[0.08] text-xs font-mono text-zinc-400 mb-8 mx-auto">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#8B5CF6] animate-pulse" />
-              Available for Select Leadership &amp; Advisory Roles
+            <div className="pt-12 md:pt-8">
+              {/* Premium Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.02] border border-white/[0.08] text-xs font-mono text-zinc-400 mb-8 mx-auto">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#8B5CF6] animate-pulse" />
+                Available for Select Leadership &amp; Advisory Roles
+              </div>
+
+              {/* Main Heading */}
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">
+                Smart Nwaiche
+              </h2>
+
+              {/* Purple Subheading */}
+              <p className="text-lg md:text-xl font-semibold text-[#8B5CF6] mb-6 tracking-wide">
+                Senior Full-Stack Developer
+              </p>
+
+              {/* Precise Description */}
+              <p className="text-sm md:text-base text-zinc-400 leading-relaxed max-w-md mx-auto mb-10 opacity-90">
+                Building digital products that combine performance, clarity, and exceptional user experience. Working with global teams from Lagos, Nigeria.
+              </p>
             </div>
-
-            {/* Main Heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">
-              Smart Nwaiche
-            </h2>
-
-            {/* Purple Subheading */}
-            <p className="text-lg md:text-xl font-semibold text-[#8B5CF6] mb-6 tracking-wide">
-              Senior Full-Stack Developer
-            </p>
-
-            {/* Precise Description */}
-            <p className="text-sm md:text-base text-zinc-400 leading-relaxed max-w-md mx-auto mb-10 opacity-90">
-              Building digital products that combine performance, clarity, and exceptional user experience. Working with global teams from Lagos, Nigeria.
-            </p>
 
             {/* Action Buttons */}
             <div className="space-y-4">
               <a
-                href="https://linkedin.com/in/smart-nwaiche"
+                href="https://www.linkedin.com/in/smart-nwaiche-6405182a5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-full py-3.5 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold rounded-2xl transition duration-200 text-sm shadow-lg hover:shadow-[#8B5CF6]/20"

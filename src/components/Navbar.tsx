@@ -175,7 +175,7 @@ export default function Navbar() {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com/in/smart-nwaiche"
+                href="https://www.linkedin.com/in/smart-nwaiche-6405182a5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-light rounded-full p-2 w-10 h-10 flex items-center justify-center text-textSecondary hover:text-accent hover:bg-glass-medium transition-all"
